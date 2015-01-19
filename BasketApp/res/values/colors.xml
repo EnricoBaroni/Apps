@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color
+        name="logo_color">#FFFF00</color> <!-- Click Boton: Amarillo -->
+    <color
+        name="version_color">#FF0000</color> <!-- Splash: Rojo -->
+    <color
+        name="version_bkgrd">#00FF00</color> <!-- Letras help.txt: Verde -->
+    <color
+        name="title_color">#CCFFFF</color> <!-- Clickar elementos menu: Claro -->
+    <color
+        name="title_glow">#FF0066</color> <!-- Clickar boton: Pink -->
+    <color
+        name="menu_color">#0099FF</color> <!-- Letras Menu: Azul Un Poco Mas Claro-->
+    <color
+        name="menu_glow">#3333FF</color> <!-- Sombras Letras Menu: Azul -->
+    <color
+        name="background_color">#000000</color> <!-- Color de fondo: Azul Celeste-->
+</resources>

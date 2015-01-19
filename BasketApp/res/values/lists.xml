@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="roll_mode">
+      <item>Komo zi fuera de berda</item>
+      <item>Pos a saco paco</item>
+   </string-array>
+   <string-array name="mode">
+      <item>real</item>
+      <item>full</item>
+   </string-array>
+</resources>

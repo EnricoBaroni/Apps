@@ -1,0 +1,3 @@
+Ayuda
+----
+Esta aplicación sirve para ayudar a los entrenadores a gestionar sus equipos, entrenamientos y calendario.

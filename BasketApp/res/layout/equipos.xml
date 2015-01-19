@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+   <TextView
+       	android:id="@+id/game_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/equipos"
+        android:gravity="center" 
+        android:textColor="@color/version_bkgrd"/>
+
+   <TextView 
+		    android:id="@+id/txtSeleccionadoEquipos"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="" />
+   <ListView
+       android:id="@+id/lstEquipos"
+       android:layout_width="match_parent"
+       android:layout_height="353dp" 
+       android:choiceMode="singleChoice">
+
+   </ListView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="40dp" >
+						
+       <Button
+           android:id="@+id/botonAnadirEquipos"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:text="@string/anadir_button"
+		   android:onClick="lanzarActivityAnadir"
+           android:textColor="@color/background_color" />
+
+       <Button
+           android:id="@+id/botonEliminarEquipos"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/eliminar_button"
+		   android:onClick="eliminarEquipo"
+           android:textColor="@color/version_color" />
+
+   </LinearLayout>
+
+    </LinearLayout>
+

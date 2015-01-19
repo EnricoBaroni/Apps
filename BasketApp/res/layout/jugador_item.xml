@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <TextView 
+	    android:id="@+id/jugador_num"
+		android:clickable="false"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+	    android:text="" 
+	    android:paddingRight="2dp"
+		/>
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fechNac"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/foto"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/fechNac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/jugador_num"
+        android:layout_alignLeft="@+id/nombre"
+        android:layout_alignRight="@+id/nombre"
+        android:layout_marginBottom="14dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

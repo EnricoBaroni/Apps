@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+   <TextView
+       	android:id="@+id/jugadores_ficha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jugadores_ficha"
+        android:gravity="center" 
+        android:textColor="@color/version_bkgrd"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical" >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" >
+
+           <ImageView
+               android:id="@+id/fotoJugador"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/logosm" />
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" >
+
+                   <TextView
+                       android:id="@+id/txtNombre"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/txtNombre" />
+                   <EditText 
+		    			android:id="@+id/etAnadirNombreJugador"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:inputType="text" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" >
+
+                   <TextView
+                       android:id="@+id/txtFechaNacimiento"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/txtFechaNacimiento" />
+                   <EditText 
+		    			android:id="@+id/etAnadirFechNacJugador"
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:inputType="text" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" >
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1" >
+
+               <TextView
+                   android:id="@+id/txtPeso"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txtPeso" />
+               <EditText 
+		    		android:id="@+id/etAnadirPesoJugador"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:inputType="text" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1">
+
+               <TextView
+                   android:id="@+id/txtAltura"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txtAltura" />
+               <EditText 
+		    		android:id="@+id/etAnadirAlturaJugador"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:inputType="text" />
+           </RelativeLayout>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" >
+
+           <TextView
+               android:id="@+id/txtTelefono"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/txtTelefono" />
+           <EditText 
+		   		android:id="@+id/etAnadirTfnJugador"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:inputType="text" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="20dp" >
+
+           <Button
+               android:id="@+id/botonFichaAnadirJugador"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:onClick="roll"
+               android:text="@string/ficha_button"
+               android:textColor="@color/background_color" />
+
+           <Button
+               android:id="@+id/botonDetallesAnadirJugador"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="@string/detalles_button"
+               android:textColor="@color/background_color" />
+
+           <Button
+               android:id="@+id/botonCrearAnadirJugador"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="@string/crear_button"
+               android:textColor="@color/background_color" />
+       </LinearLayout>
+			<TextView
+       			android:id="@+id/txtResultadoAnadirJugador"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:gravity="center" 
+        		android:textColor="@color/version_bkgrd"/>
+   </LinearLayout>
+
+    </LinearLayout>
+

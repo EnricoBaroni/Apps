@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+   <TextView
+       	android:id="@+id/game_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jugadores_equipo"
+        android:gravity="center" 
+        android:textColor="@color/version_bkgrd"/>
+   
+ 	<TextView 
+		    android:id="@+id/txtSeleccionadoEquipo"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="" />
+ 
+   <ListView
+       android:id="@+id/lstJugadores"
+       android:layout_width="match_parent"
+       android:layout_height="353dp" >
+
+   </ListView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingTop="40dp" >
+
+       <Button
+           android:id="@+id/botonAnadirJugadorEquipo"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:text="@string/anadir_button"
+           android:textColor="@color/background_color" />
+
+       <Button
+           android:id="@+id/botonEliminarJugadorEquipo"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/eliminar_button"
+		   android:onClick="eliminarJugadorEquipo"
+           android:textColor="@color/version_color" />
+
+       <Button
+           android:id="@+id/botonEditarEquipo"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:text="@string/editar_button"
+           android:textColor="@color/background_color" />
+
+   </LinearLayout>
+
+    </LinearLayout>
+
