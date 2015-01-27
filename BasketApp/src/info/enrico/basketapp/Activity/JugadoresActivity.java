@@ -84,7 +84,13 @@ public class JugadoresActivity extends Activity {
 						
 				// Sacamos info por el textview
 				txtSeleccionado.setText("Has seleccionado: " + seleccionado);				    	
-				Log.d("ENRICO","Clickado el elemento con el identificador: " + seleccionado);		
+				Log.d("ENRICO","Clickado el elemento con el identificador: " + seleccionado);	
+				//TODO Muestra la ficha del jugador seleccionado
+				//TODO Crear la Activity de FichaJugador, a partir de AnadirJugadorActivity
+			}
+			public void onItemLongClick(AdapterView<?> arg0, View arg1, int arg2, long arg3){
+				//TODO Seleccion multiple para eliminar añadir jugadores al equipo o eliminarlos definitivamente
+				Log.d("ENRICO","Long Click en el elemento con el identificador: " + seleccionado);
 			}
 		});		
 		
@@ -92,14 +98,14 @@ public class JugadoresActivity extends Activity {
 		botonanadir.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				Log.d("ENRICO","Dentro OnClick Añadir");
-				//TODO Añadir al equipo con seleccion multiple
+				//TODO Completar todo del LongClick
 			}
 		});
 		Log.d("ENRICO","OnClick Eliminar");
 		botoneliminar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				Log.d("ENRICO","Dentro OnClick Eliminar");
-				//TODO Eliminar del equipo con seleccion multiple
+				//TODO Completar todo del LongClick
 			}
 		});
 		Log.d("ENRICO","OnClick Crear");

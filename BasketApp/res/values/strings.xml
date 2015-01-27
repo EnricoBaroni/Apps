@@ -23,6 +23,7 @@
     <string name="buscar_button">Buscar</string>
     <string name="salir_button">Salir</string>
     <string name="editar_button">Editar</string>
+    <string name="ver_button">Ver</string>
     <string name="eliminar_button">X</string>
     <string name="crear_button">Crear</string>
     <string name="ficha_button">Ficha</string>

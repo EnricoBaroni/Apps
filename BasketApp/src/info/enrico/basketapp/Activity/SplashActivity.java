@@ -64,12 +64,10 @@ public class SplashActivity extends Activity {
             }
 
 			public void onAnimationRepeat(Animation arg0) {
-				// TODO Auto-generated method stub
 				
 			}
 
 			public void onAnimationStart(Animation arg0) {
-				// TODO Auto-generated method stub
 				
 			}
         });

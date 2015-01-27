@@ -85,8 +85,12 @@ public class EquiposActivity extends ListActivity {
 				
 				// Sacamos info por el textview
 				txtSeleccionado.setText("Has seleccionado: " + seleccionado);				    	
-				Log.d("ENRICO","Clickado el elemento con el identificador: " + seleccionado);				
+				Log.d("ENRICO","Click en el elemento con el identificador: " + seleccionado);				
 				lanzarActivityEquipo(db.obtenerEquipo(seleccionado).getIdEquipo());				
+			}
+			public void onItemLongClick(AdapterView<?> arg0, View arg1, int arg2, long arg3){
+				//TODO Seleccion multiple para eliminar equipos
+				Log.d("ENRICO","Long Click en el elemento con el identificador: " + seleccionado);
 			}
 		});
     }

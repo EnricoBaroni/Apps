@@ -48,7 +48,7 @@ public class EquipoActivity extends Activity {
      	//Botones
         botonanadir = (Button) this.findViewById(R.id.botonAnadirJugadorEquipo);
         botoneliminar = (Button) this.findViewById(R.id.botonEliminarJugadorEquipo);
-        botoneditar = (Button) this.findViewById(R.id.botonEditarEquipo);
+        botoneditar = (Button) this.findViewById(R.id.botonEditarDetallesEquipo);
         
         lista = (ListView) findViewById(R.id.lstJugadores);
 		arrayjug = new ArrayList<Jugador>();
@@ -73,7 +73,12 @@ public class EquipoActivity extends Activity {
 						
 				// Sacamos info por el textview
 				txtSeleccionado.setText("Has seleccionado: " + seleccionado);				    	
-				Log.d("ENRICO","Clickado el elemento con el identificador: " + seleccionado);
+				Log.d("ENRICO","Click en el elemento con el identificador: " + seleccionado);
+				//TODO Muestra la ficha del jugador seleccionado
+			}
+			public void onItemLongClick(AdapterView<?> arg0, View arg1, int arg2, long arg3){
+				//TODO Seleccion multiple para eliminar jugadores
+				Log.d("ENRICO","Long Click en el elemento con el identificador: " + seleccionado);
 			}
 		});		
 		
@@ -88,7 +93,9 @@ public class EquipoActivity extends Activity {
 		botoneditar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				Log.d("ENRICO","Dentro OnClick Editar");
-				//TODO Que hacer aqui
+				//TODO MAYBE ¿Añadir a Clase Equipo? Permite editar alguna descripcion del equipo, 
+				//con alguna cosa a mejorar 
+				//o algo importante a saber para algun entrenador nuevo 
 			}
 		});
     }

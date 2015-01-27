@@ -48,7 +48,7 @@
            android:textColor="@color/version_color" />
 
        <Button
-           android:id="@+id/botonEditarEquipo"
+           android:id="@+id/botonEditarDetallesEquipo"
            android:layout_width="130dp"
            android:layout_height="wrap_content"
            android:text="@string/editar_button"

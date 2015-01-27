@@ -103,7 +103,7 @@ public final class R {
         public static final int botonCrearJugador=0x7f0b0045;
         public static final int botonDetallesAnadirJugador=0x7f0b0011;
         public static final int botonDetallesFicha=0x7f0b003b;
-        public static final int botonEditarEquipo=0x7f0b002d;
+        public static final int botonEditarDetallesEquipo=0x7f0b002d;
         public static final int botonEditarFicha=0x7f0b003c;
         public static final int botonEliminarEquipos=0x7f0b0031;
         public static final int botonEliminarJugador=0x7f0b0044;
@@ -202,24 +202,24 @@ public final class R {
          */
         public static final int anadir_button=0x7f0a0011;
         public static final int app_name=0x7f0a0000;
-        public static final int apps_button=0x7f0a0019;
+        public static final int apps_button=0x7f0a001a;
         public static final int ayuda_title=0x7f0a0005;
         /**  Entrenamientos 
          */
-        public static final int buscarTitulo=0x7f0a0022;
+        public static final int buscarTitulo=0x7f0a0023;
         public static final int buscar_button=0x7f0a0012;
         public static final int calendario_title=0x7f0a0006;
-        public static final int crear_button=0x7f0a0016;
-        public static final int detalles_button=0x7f0a0018;
+        public static final int crear_button=0x7f0a0017;
+        public static final int detalles_button=0x7f0a0019;
         public static final int editar_button=0x7f0a0014;
-        public static final int eliminar_button=0x7f0a0015;
+        public static final int eliminar_button=0x7f0a0016;
         public static final int entrenamiento_title=0x7f0a000a;
         public static final int entrenamientos_title=0x7f0a000d;
         public static final int equipo_title=0x7f0a0007;
         public static final int equipos_title=0x7f0a0008;
-        public static final int explicacion=0x7f0a0025;
-        public static final int ficha_button=0x7f0a0017;
-        public static final int friday=0x7f0a002b;
+        public static final int explicacion=0x7f0a0026;
+        public static final int ficha_button=0x7f0a0018;
+        public static final int friday=0x7f0a002c;
         public static final int jugadores_equipo=0x7f0a0009;
         public static final int jugadores_ficha=0x7f0a000c;
         public static final int jugadores_title=0x7f0a000b;
@@ -228,33 +228,34 @@ public final class R {
         public static final int menu_title=0x7f0a0004;
         /**  Calendar 
          */
-        public static final int monday=0x7f0a0027;
-        public static final int notas=0x7f0a0026;
+        public static final int monday=0x7f0a0028;
+        public static final int notas=0x7f0a0027;
         public static final int salir_button=0x7f0a0013;
-        public static final int saturday=0x7f0a002c;
+        public static final int saturday=0x7f0a002d;
         public static final int splash_info=0x7f0a0003;
         public static final int splash_subtitle=0x7f0a0002;
         public static final int splash_title=0x7f0a0001;
-        public static final int sunday=0x7f0a002d;
+        public static final int sunday=0x7f0a002e;
         /**  Entrenamiento 
          */
-        public static final int tema=0x7f0a0023;
-        public static final int thursday=0x7f0a002a;
-        public static final int titulo=0x7f0a0024;
-        public static final int tuesday=0x7f0a0028;
-        public static final int txtAltura=0x7f0a001d;
-        public static final int txtCorreo=0x7f0a0020;
-        public static final int txtFechaNacimiento=0x7f0a001b;
+        public static final int tema=0x7f0a0024;
+        public static final int thursday=0x7f0a002b;
+        public static final int titulo=0x7f0a0025;
+        public static final int tuesday=0x7f0a0029;
+        public static final int txtAltura=0x7f0a001e;
+        public static final int txtCorreo=0x7f0a0021;
+        public static final int txtFechaNacimiento=0x7f0a001c;
         /**  Ayuda 
          */
-        public static final int txtInfoApp=0x7f0a001f;
+        public static final int txtInfoApp=0x7f0a0020;
         /**  Ficha 
          */
-        public static final int txtNombre=0x7f0a001a;
-        public static final int txtPeso=0x7f0a001c;
-        public static final int txtTelefono=0x7f0a001e;
-        public static final int txtVersion=0x7f0a0021;
-        public static final int wednesday=0x7f0a0029;
+        public static final int txtNombre=0x7f0a001b;
+        public static final int txtPeso=0x7f0a001d;
+        public static final int txtTelefono=0x7f0a001f;
+        public static final int txtVersion=0x7f0a0022;
+        public static final int ver_button=0x7f0a0015;
+        public static final int wednesday=0x7f0a002a;
     }
     public static final class xml {
         public static final int date_number_text_color=0x7f050000;
