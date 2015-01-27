@@ -8,15 +8,15 @@
        	android:id="@+id/txtResultadoAnadirEquipo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/jugadores_title"
+        android:text="@string/anadirEquipo_title"
         android:gravity="center" 
         android:textColor="@color/version_bkgrd"/>
    
-		<EditText 
+		<!-- EditText 
 		    	android:id="@+id/etAnadirEquipo"
 				android:layout_width="fill_parent" 
 				android:layout_height="wrap_content"
-				android:inputType="text" />
+				android:inputType="text" / -->
 				
 		<Button
                android:id="@+id/botonAnadirNuevoEquipo"

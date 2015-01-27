@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-public class EntrenamientoActivity extends ListActivity {
+public class EntrenamientosActivity extends ListActivity {
 	Button botonbuscar;
 	Button botoneliminar;
 	Button botonanadir;
@@ -28,7 +28,7 @@ public class EntrenamientoActivity extends ListActivity {
         super.onCreate(savedInstanceState);        
         //addPreferencesFromResource(R.xml.preferences);
         Log.d("ENRICO","Cargando layout");
-        setContentView(R.layout.entrenamiento);   
+        setContentView(R.layout.entrenamientos);   
         
         String[] items = { "a","b"};
         

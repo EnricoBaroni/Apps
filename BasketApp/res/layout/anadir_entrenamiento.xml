@@ -24,7 +24,11 @@
         android:text="@string/titulo"
         android:gravity="center" 
         android:textColor="@color/version_bkgrd"/>
-    
+    <!-- EditText 
+		   android:id="@+id/etAnadirTituloEntrenamiento"
+		   android:layout_width="0dp" 
+		   android:layout_height="40dp"
+		   android:layout_weight="1" /-->
       </LinearLayout>
       
     <LinearLayout
@@ -65,7 +69,11 @@
         android:text="@string/explicacion"
         android:gravity="center" 
         android:textColor="@color/version_bkgrd"/>
-    
+    <!-- EditText 
+		   android:id="@+id/etAnadirExplicacionEntrenamiento"
+		   android:layout_width="0dp" 
+		   android:layout_height="40dp"
+		   android:layout_weight="1" /-->
       </LinearLayout>
       
       <LinearLayout
@@ -80,6 +88,10 @@
         android:text="@string/notas"
         android:gravity="center" 
         android:textColor="@color/version_bkgrd"/>
-    
+    <!-- EditText 
+		   android:id="@+id/etAnadirNotasEntrenamiento"
+		   android:layout_width="0dp" 
+		   android:layout_height="40dp"
+		   android:layout_weight="1" /-->
       </LinearLayout>
     </LinearLayout>

@@ -16,7 +16,11 @@
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content" >
-
+	  <!-- EditText 
+		   android:id="@+id/etBuscarNombre"
+		   android:layout_width="0dp" 
+		   android:layout_height="40dp"
+		   android:layout_weight="1" /-->
       <Spinner
            android:id="@+id/spinBuscarCategoria"
            android:layout_width="0dp"
@@ -38,21 +42,24 @@
        android:paddingTop="40dp" >
 
        <Button
-           android:id="@+id/botonbuscar_entrenamiento"
+           android:id="@+id/botonbuscar_entrenamientos"
            android:layout_width="130dp"
            android:layout_height="wrap_content"
-           android:onClick="roll"
            android:text="@string/buscar_button"
            android:textColor="@color/background_color" />
 
        <Button
-           android:id="@+id/botoneliminar_entrenamiento"
+           android:id="@+id/botoneliminar_entrenamientos"
            android:layout_width="50dp"
            android:layout_height="wrap_content"
            android:text="@string/eliminar_button"
            android:textColor="@color/version_color" />
-
-      
+       <Button
+           android:id="@+id/botonanadir_entrenamientos"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:text="@string/anadir_button"
+           android:textColor="@color/background_color" />
 
    </LinearLayout>
 

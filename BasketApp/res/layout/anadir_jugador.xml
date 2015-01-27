@@ -20,12 +20,13 @@
 
        <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="wrap_content" >
+           android:layout_height="wrap_content"
+           android:paddingTop="10dp" >
 
            <ImageView
                android:id="@+id/fotoJugador"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
+               android:layout_width="90dp"
+               android:layout_height="90dp"
                android:src="@drawable/logosm" />
 
            <LinearLayout
@@ -35,45 +36,50 @@
 
                <LinearLayout
                    android:layout_width="match_parent"
-                   android:layout_height="wrap_content" >
+                   android:layout_height="wrap_content"    
+       			   android:paddingTop="10dp">
 
                    <TextView
                        android:id="@+id/txtNombre"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="@string/txtNombre" />
-                   <EditText 
+                       android:text="@string/txtNombre" 
+                       android:paddingLeft="5dp"/>
+                   <!--
+                        EditText 
 		    			android:id="@+id/etAnadirNombreJugador"
 						android:layout_width="fill_parent" 
 						android:layout_height="wrap_content"
-						android:inputType="text" />
+						android:inputType="text" /-->
 
                </LinearLayout>
 
                <LinearLayout
                    android:layout_width="match_parent"
-                   android:layout_height="wrap_content" >
+                   android:layout_height="wrap_content"
+                   android:paddingTop="10dp" >
 
                    <TextView
                        android:id="@+id/txtFechaNacimiento"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="@string/txtFechaNacimiento" />
-                   <EditText 
+                       android:text="@string/txtFechaNacimiento"  
+                       android:paddingLeft="5dp"/>
+                   <!--
+                        EditText 
 		    			android:id="@+id/etAnadirFechNacJugador"
 						android:layout_width="fill_parent" 
 						android:layout_height="wrap_content"
-						android:inputType="text" />
+						android:inputType="text" /-->
 
                </LinearLayout>
-
            </LinearLayout>
-
        </LinearLayout>
 
        <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="wrap_content" >
+           android:layout_height="wrap_content"   
+       	   android:paddingTop="10dp" >
 
            <RelativeLayout
                android:layout_width="match_parent"
@@ -84,12 +90,13 @@
                    android:id="@+id/txtPeso"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="@string/txtPeso" />
-               <EditText 
+                   android:text="@string/txtPeso"  
+                       android:paddingLeft="5dp"/>
+               <!-- EditText 
 		    		android:id="@+id/etAnadirPesoJugador"
 					android:layout_width="fill_parent" 
 					android:layout_height="wrap_content"
-					android:inputType="text" />
+					android:inputType="text" / -->
            </RelativeLayout>
 
            <RelativeLayout
@@ -101,29 +108,32 @@
                    android:id="@+id/txtAltura"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="@string/txtAltura" />
-               <EditText 
+                   android:text="@string/txtAltura"  
+                       android:paddingLeft="5dp"/>
+               <!-- EditText 
 		    		android:id="@+id/etAnadirAlturaJugador"
 					android:layout_width="fill_parent" 
 					android:layout_height="wrap_content"
-					android:inputType="text" />
+					android:inputType="text" / -->
            </RelativeLayout>
        </LinearLayout>
 
        <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="wrap_content" >
+           android:layout_height="wrap_content"    
+       	   android:paddingTop="10dp">
 
            <TextView
                android:id="@+id/txtTelefono"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="@string/txtTelefono" />
-           <EditText 
+               android:text="@string/txtTelefono"  
+                       android:paddingLeft="5dp"/>
+           <!-- EditText 
 		   		android:id="@+id/etAnadirTfnJugador"
 				android:layout_width="fill_parent" 
 				android:layout_height="wrap_content"
-				android:inputType="text" />
+				android:inputType="text" / -->
 
        </LinearLayout>
 

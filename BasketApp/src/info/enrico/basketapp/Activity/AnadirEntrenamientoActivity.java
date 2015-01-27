@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AnadirJugadorActivity extends ListActivity {
+public class AnadirEntrenamientoActivity extends ListActivity {
 	Button botonficha;
 	Button botondetalles;
 	Button botoncrear;
@@ -101,7 +101,7 @@ public class AnadirJugadorActivity extends ListActivity {
 	
 	public void lanzarActivityJugadores(String resultado) {
 		txtResultado.setText("");
-		Intent intent = new Intent(AnadirJugadorActivity.this, JugadoresActivity.class);
+		Intent intent = new Intent(AnadirEntrenamientoActivity.this, JugadoresActivity.class);
 		Bundle b = new Bundle();
 		b.putString("resultadoAnadirJugador", resultado);
 		intent.putExtras(b);

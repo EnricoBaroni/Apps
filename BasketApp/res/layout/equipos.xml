@@ -9,7 +9,7 @@
        	android:id="@+id/game_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/equipos"
+        android:text="@string/equipos_title"
         android:gravity="center" 
         android:textColor="@color/version_bkgrd"/>
 

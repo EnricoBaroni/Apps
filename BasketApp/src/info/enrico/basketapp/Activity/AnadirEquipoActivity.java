@@ -49,7 +49,7 @@ public class AnadirEquipoActivity extends ListActivity {
         setContentView(R.layout.anadir_equipos);
         
         // En esta caja de texto meteremos nuevos equipos
-     	nuevoEquipo = (EditText) findViewById(R.id.etAnadirEquipo);
+     	////nuevoEquipo = (EditText) findViewById(R.id.etAnadirEquipo);
      	//TODO MAYBE ¿Igual en un futuro? Un textview que informa si el nuevo equipo no se puede insertar
         txtResultado = (TextView) findViewById(R.id.txtResultadoAnadirEquipo);
      	//Botones

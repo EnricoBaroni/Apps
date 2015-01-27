@@ -49,7 +49,7 @@ public class MenuActivity extends Activity {
             	// Según la posición del menú seleccionada hacemos determinada cosa
                 switch (position) {
                 	case 0:
-                			startActivity(new Intent(MenuActivity.this, EntrenamientoActivity.class));
+                			startActivity(new Intent(MenuActivity.this, EntrenamientosActivity.class));
                 			Log.d("ENRICO","Iniciada actividad: " + position);
                 			break;
                 	case 1:

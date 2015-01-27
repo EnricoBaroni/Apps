@@ -22,7 +22,7 @@
         </activity>                
         <activity
             android:label="@string/entrenamiento_title"
-            android:name="info.enrico.basketapp.Activity.EntrenamientoActivity" >
+            android:name="info.enrico.basketapp.Activity.EntrenamientosActivity" >
         </activity>
         <activity
             android:label="@string/equipos_title"

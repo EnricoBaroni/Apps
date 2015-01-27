@@ -10,12 +10,14 @@
     <string name="calendario_title">Calendario</string>
     <string name="equipo_title">Equipo</string>
     <string name="equipos_title">Equipos</string>
-    <string name="equipos">Mis Equipos</string>
     <string name="jugadores_equipo">Mis Jugadores</string>
     <string name="entrenamiento_title">Entrenamiento</string>    
     <string name="jugadores_title">Jugadores</string>
     <string name="jugadores_ficha">Ficha</string>
     <string name="entrenamientos_title">Mis Entrenamientos</string>
+    <string name="anadirEquipo_title">Añadir Equipo</string>
+    <string name="anadirJugador_title">Añadir Jugador</string>
+    <string name="anadirEntrenamiento_title">Añadir Entrenamiento</string>
     <!-- Botones -->
     <string name="anadir_button">Añadir</string>
     <string name="buscar_button">Buscar</string>
@@ -38,6 +40,11 @@
     <string name="txtVersion">V.0:</string>
     <!-- Entrenamientos -->
     <string name="buscarTitulo">titulo</string>
+    <!-- Entrenamiento -->
+    <string name="tema">Tema</string>
+    <string name="titulo">Titulo</string>
+    <string name="explicacion">Explicacion</string>
+    <string name="notas">Notas</string>
     <!-- Calendar -->
     <string name="monday">MON</string>
     <string name="tuesday">TUE</string>
