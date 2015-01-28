@@ -20,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class JugadoresActivity extends Activity {
@@ -33,6 +34,7 @@ public class JugadoresActivity extends Activity {
     private int seleccionado = -1;
     int idEquipo;
     int idJugador;
+    private Cursor cursor = null;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,12 +68,7 @@ public class JugadoresActivity extends Activity {
      	//NombreJugador añadido
      	//String resultadoAnadir = b.getString("resultadoAnadirJugador");
      	
-     	
-		// Creo el adapter personalizado
-		AdapterJugadores adapter = new AdapterJugadores(this, arrayjug);
- 
-		// Lo aplico
-		lista.setAdapter(adapter);
+		cargarLista();
 
 		// Le asociamos un listener para saber cuál clickamos
 		lista.setOnItemClickListener(new OnItemClickListener() {
@@ -116,6 +113,15 @@ public class JugadoresActivity extends Activity {
 			}
 		});
     }
+    
+    /**
+	 * actualizarLista
+	 * La lista tipo ListView tiene asociado un Cursor,
+	 * nos basta con hacer un requery para que se refresque
+	 */
+	private void actualizarLista () {
+		cursor.requery();
+	}    
     public void lanzarActivityCrearJugador(int idEquipo) {
 		Intent intent = new Intent(JugadoresActivity.this, AnadirJugadorActivity.class);
 		Bundle b = new Bundle();
@@ -123,5 +129,39 @@ public class JugadoresActivity extends Activity {
 		intent.putExtras(b);
 		startActivity(intent);
 		finish();
+	}
+    private void cargarLista() {
+		arrayjug = db.obtenerJugadores();	//Carga todos los jugadores
+		// Creo el adapter personalizado
+		AdapterJugadores adapter = new AdapterJugadores(this, arrayjug);
+		// Lo aplico
+		lista.setAdapter(adapter);
+	}
+    /**
+	 * eliminarJugador
+	 * Recupera el id del jugador que habiamos seleccionado 
+	 * y el manda a la BD que lo elimine
+	 * @param v
+	 */
+	public void eliminarJugador (View v) {
+		// Si no tenemos nada seleccionado nos vamos.
+		if (seleccionado == -1) {return;}
+		
+		// nos cargamos el registro de la BD
+		db.borrarJugador(seleccionado);
+
+		// Hasta que no vuelvan a seleccionar algún elemento
+		// de la lista no podremos entrar aquí
+		seleccionado = -1;
+		
+    	// Sacamos info por el textview
+    	txtSeleccionado.setText("Elemento eliminado");
+
+		
+		// Actualiza los datos del elemento ListView.
+		actualizarLista();
+
+		// Notificamos al usuario
+		Toast.makeText(getApplicationContext(), "Registro eliminado: " + seleccionado, Toast.LENGTH_SHORT).show();
 	}
 }     

@@ -7,6 +7,7 @@ import info.enrico.basketapp.BD.DbAdapter;
 import info.enrico.basketapp.Class.Equipo;
 import info.enrico.basketapp.Class.Jugador;
 
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -25,7 +26,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class EquiposActivity extends ListActivity {
+public class EquiposActivity extends Activity {
 	Button botonanadir;
 	Button botoneliminar;
 	ListView lista;
@@ -57,6 +58,7 @@ public class EquiposActivity extends ListActivity {
         botonanadir = (Button) this.findViewById(R.id.botonAnadirEquipos);
         botoneliminar = (Button) this.findViewById(R.id.botonEliminarEquipos);
         //Lista
+        Log.d("ENRICO","Id de la lista: " + R.id.lstEquipos);
      	lista = (ListView) findViewById(R.id.lstEquipos);
 		ArrayList<Equipo> arrayequip = new ArrayList<Equipo>();
 	
@@ -67,7 +69,9 @@ public class EquiposActivity extends ListActivity {
      	//pero por si queremos mostrarlo de otra manera lo pillamos. 
      	//Nombre del equipo añadido
      	Bundle b = getIntent().getExtras();
-     	String resultadoAnadir = b.getString("resultadoAnadir");
+     	if(this.getIntent().getExtras() != null){
+     		String resultadoAnadir = b.getString("resultadoAnadir");
+     	}
 		
      	arrayequip = db.obtenerEquipos(); //CARGA TODOS LOS EQUIPOS
      	
