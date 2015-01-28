@@ -9,13 +9,20 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 public class EntrenamientoActivity extends ListActivity {
-	Button botonbuscar;
-	Button botoneliminar;
-	Button botonanadir;
-	ListView lstEntrenamientos;
+	Button botonsiguiente;
+	Button botonanterior;
+	Button botoneditar;
+	TextView titulo;
+	TextView explicacion;
+	TextView notas;
+	ImageView dibujo;
+	Spinner tema;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,40 +35,37 @@ public class EntrenamientoActivity extends ListActivity {
         super.onCreate(savedInstanceState);        
         //addPreferencesFromResource(R.xml.preferences);
         Log.d("ENRICO","Cargando layout");
-        setContentView(R.layout.entrenamiento);   
-        
-        String[] items = { "a","b"};
+        setContentView(R.layout.entrenamiento);                   
         
         Log.d("ENRICO","Cargando botones");        
-        botonbuscar = (Button) this.findViewById(R.id.botonbuscar_entrenamientos);
-        botoneliminar = (Button) this.findViewById(R.id.botoneliminar_entrenamientos);
-        botonanadir = (Button) this.findViewById(R.id.botonanadir_entrenamientos);
-        lstEntrenamientos = getListView();
+        botonsiguiente = (Button) this.findViewById(R.id.botonSiguiente_entrenamiento);
+        botonanterior = (Button) this.findViewById(R.id.botonAnterior_entrenamiento);
+        botoneditar = (Button) this.findViewById(R.id.botonEditar_entrenamiento);
+        titulo = (TextView) this.findViewById(R.id.titulo_entrenamiento);
+        dibujo = (ImageView) this.findViewById(R.id.imagen_entrenamiento);
+        tema = (Spinner) this.findViewById(R.id.spinTema_entrenamiento);
+        explicacion = (TextView) this.findViewById(R.id.explicacion_entrenamiento);
         
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,
-        	    R.layout.menu_item, items);        
-        lstEntrenamientos.setAdapter(adaptador);
         
-        Log.d("ENRICO","OnClick Buscar");
-        botonbuscar.setOnClickListener(new View.OnClickListener() {
+        Log.d("ENRICO","OnClick Editar");
+        botoneditar.setOnClickListener(new View.OnClickListener() {
     	    public void onClick(View view) {
-    	    	Log.d("ENRICO","Dentro OnClick Buscar");
-    	    	//TODO Buscar por categoria
-    	    	//El buscar por nombre se actualiza letra a letra
+    	    	Log.d("ENRICO","Dentro OnClick Editar");
+    	    	//TODO Va a la Activity para editar entrenamientos   	    	
     	    }
     	});
-        Log.d("ENRICO","OnClick Eliminar");
-        botoneliminar.setOnClickListener(new View.OnClickListener() {
+        Log.d("ENRICO","OnClick Siguiente");
+        botonsiguiente.setOnClickListener(new View.OnClickListener() {
     	    public void onClick(View view) {
-    	    	Log.d("ENRICO","Dentro OnClick Eliminar");
-    	    	//TODO Elimina el entrenamiento seleccionado
+    	    	Log.d("ENRICO","Dentro OnClick Siguiente");
+    	    	//TODO Pasa al dibujo siguiente	    	
     	    }
     	});
-        Log.d("ENRICO","OnClick Añadir");
-        botonanadir.setOnClickListener(new View.OnClickListener() {
+        Log.d("ENRICO","OnClick Anterior");
+        botonanterior.setOnClickListener(new View.OnClickListener() {
     	    public void onClick(View view) {
-    	    	Log.d("ENRICO","Dentro OnClick Añadir");
-    	    	//TODO Va a la creación de entrenamiento
+    	    	Log.d("ENRICO","Dentro OnClick Anterior");
+    	    	//TODO Pasa al dibujo anterior 	    	
     	    }
     	});
     }

@@ -40,19 +40,39 @@
         android:gravity="center" 
         android:textColor="@color/version_bkgrd"/>
       <Spinner
-        android:id="@+id/spinBuscarCategoria"
+        android:id="@+id/spinTema_entrenamiento"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_weight="1" />
     
       </LinearLayout>
-
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       android:paddingTop="10dp">      
+	  
+      <Button
+           android:id="@+id/botonAnterior_entrenamiento"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/eliminar_button"
+		   android:onClick="eliminarEquipo"
+           android:textColor="@color/version_color" />
     <ImageView
         android:id="@+id/imagen_entrenamiento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logoanim" />
-    
+        android:layout_width="220dp" 
+        android:layout_height="150dp"        
+        android:src="@drawable/logoanim" />      
+	  
+      <Button
+           android:id="@+id/botonSiguiente_entrenamiento"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/eliminar_button"
+		   android:onClick="eliminarEquipo"
+           android:textColor="@color/version_color" />
+      
+    </LinearLayout>
 	<LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"  
@@ -82,4 +102,20 @@
         android:textColor="@color/version_bkgrd"/>
     
       </LinearLayout>
+      
+      <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"  
+       android:paddingTop="10dp">
+
+      <Button
+          android:id="@+id/botonEditar_entrenamiento"
+          android:layout_width="130dp"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:onClick="lanzarActivityAnadir"
+          android:text="@string/anadir_button"
+          android:textColor="@color/background_color" />
+
+      </RelativeLayout>
     </LinearLayout>
