@@ -169,7 +169,7 @@ public final class R {
         public static final int txtSeleccionadoEquipos=0x7f0b0032;
         public static final int txtSeleccionadoJugadores=0x7f0b0045;
         public static final int txtTelefono=0x7f0b000f;
-        public static final int txtTelefonoFicha=0x7f0b003d;
+        public static final int txtTfnFicha=0x7f0b003d;
         public static final int txtVersion=0x7f0b0017;
     }
     public static final class layout {

@@ -12,6 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,14 +20,15 @@ import android.widget.Toast;
 public class FichaJugadorActivity extends ListActivity {
 	Button botonficha;
 	Button botondetalles;
-	Button botoncrear;
+	Button botoneditar;
 	private DbAdapter db;
-	private EditText nuevoNombre;
-	private EditText nuevoFechNac;
-	private EditText nuevoPeso;
-	private EditText nuevoAltura;
-	private EditText nuevoTfn;
-	private TextView txtResultado;
+	private TextView nombre;
+	private TextView fechNac;
+	private TextView peso;
+	private TextView altura;
+	private TextView tfn;
+	private TextView detalles;
+	private ImageView imagen;
 	private Cursor cursor = null;
 	
 	TextView game_title;
@@ -53,54 +55,26 @@ public class FichaJugadorActivity extends ListActivity {
      	//visualizar graficamente los layout, luego descomentarlos alli y aqui
      	
         // En esta caja de texto meteremos nuevos jugadores
-     	////nuevoNombre = (EditText) findViewById(R.id.etAnadirNombreJugador);
-     	////nuevoFechNac = (EditText) findViewById(R.id.etAnadirFechNacJugador);
-     	////nuevoPeso = (EditText) findViewById(R.id.etAnadirPesoJugador);
-     	////nuevoAltura = (EditText) findViewById(R.id.etAnadirAlturaJugador);
-     	////nuevoTfn = (EditText) findViewById(R.id.etAnadirTfnJugador);
+     	nombre = (EditText) findViewById(R.id.txtNombreFicha);
+     	fechNac = (EditText) findViewById(R.id.txtFechaNacimientoFicha);
+     	peso = (EditText) findViewById(R.id.txtPesoFicha);
+     	altura = (EditText) findViewById(R.id.txtAlturaFicha);
+     	tfn = (EditText) findViewById(R.id.txtTfnFicha);
+     	//TODO Como hacer con los detalles
+     	//detalles = (EditText) findViewById(R.id.txtTfnFicha);
+     	imagen = (ImageView) findViewById(R.id.fotoJugadorFicha);
      	//TODO MAYBE ¿Igual en un futuro? Un textview que informa si el nuevo jugador no se puede insertar
-        txtResultado = (TextView) findViewById(R.id.txtResultadoAnadirJugador);
+        
      	//Botones
-        botoncrear = (Button) this.findViewById(R.id.botonCrearAnadirJugador);
+        botoneditar = (Button) this.findViewById(R.id.botonEditarFicha);
+        botonficha = (Button) this.findViewById(R.id.botonFichaFicha);
+        botondetalles = (Button) this.findViewById(R.id.botonDetallesFicha);
      	
      	db = new DbAdapter(this);
      	db.open();
-    }
-        
-	/**
-	 * insertarRegistro
-	 * Toma la información de la caja de texto y la inserta
-	 * como nuevo registro
-	 * @param v
-	 */
-	public void insertarRegistro (View v) {
-		String nombre = nuevoNombre.getText().toString();
-		String fechNac = nuevoFechNac.getText().toString();
-		int peso = Integer.parseInt(nuevoPeso.getText().toString());
-		int altura = Integer.parseInt(nuevoAltura.getText().toString());
-		int tfn = Integer.parseInt(nuevoTfn.getText().toString());
-		
-		// Inserta los valores de las cajas de texto en la tabla notas.
-		if(nombre.length() == 0){
-			txtResultado.setText("Introduce un nombre de jugador al menos");
-		}else{
-			db.insertarJugador(nombre, idEquipo, fechNac, peso, altura, tfn, "imagen", "detalles");
-
-			// Notificamos al usuario
-			Toast.makeText(getApplicationContext(), "Nuevo equipo introducido: " + nuevoNombre, Toast.LENGTH_SHORT).show();
-		
-			// Vacíamos la caja de texto
-			nuevoNombre.setText("");
-			nuevoFechNac.setText("");
-			nuevoPeso.setText("");
-			nuevoAltura.setText("");
-			nuevoTfn.setText("");
-			lanzarActivityJugadores(nuevoNombre.getText().toString());
-		}		
-	}
+    }        
 	
-	public void lanzarActivityJugadores(String resultado) {
-		txtResultado.setText("");
+	public void lanzarActivityJugadores(String resultado) {		
 		Intent intent = new Intent(FichaJugadorActivity.this, JugadoresActivity.class);
 		Bundle b = new Bundle();
 		b.putString("resultadoAnadirJugador", resultado);
