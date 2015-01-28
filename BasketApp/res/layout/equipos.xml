@@ -36,7 +36,6 @@
            android:layout_width="130dp"
            android:layout_height="wrap_content"
            android:text="@string/anadir_button"
-		   android:onClick="lanzarActivityAnadir"
            android:textColor="@color/background_color" />
 
        <Button
@@ -44,7 +43,6 @@
            android:layout_width="50dp"
            android:layout_height="wrap_content"
            android:text="@string/eliminar_button"
-		   android:onClick="eliminarEquipo"
            android:textColor="@color/version_color" />
 
    </LinearLayout>

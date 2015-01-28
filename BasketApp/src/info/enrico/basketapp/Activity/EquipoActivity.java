@@ -98,6 +98,13 @@ public class EquipoActivity extends Activity {
 				//o algo importante a saber para algun entrenador nuevo 
 			}
 		});
+		Log.d("ENRICO","OnClick Eliminar");
+		botoneliminar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Log.d("ENRICO","Dentro OnClick Eliminar");
+				eliminarJugadorEquipo(view);
+			}
+		});
     }
     
 	private void cargarLista(int idEquipo) {

@@ -22,7 +22,6 @@
                android:id="@+id/botonAnadirNuevoEquipo"
                android:layout_width="130dp"
                android:layout_height="wrap_content"
-               android:text="@string/anadir_button"               
-			   android:onClick="insertarRegistro"
+               android:text="@string/anadir_button"  
                android:textColor="@color/background_color" />
 </LinearLayout>

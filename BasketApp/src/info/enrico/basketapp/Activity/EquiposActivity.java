@@ -97,6 +97,21 @@ public class EquiposActivity extends Activity {
 				Log.d("ENRICO","Long Click en el elemento con el identificador: " + seleccionado);
 			}
 		});
+		
+		Log.d("ENRICO","OnClick Añadir");
+		botonanadir.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Log.d("ENRICO","Dentro OnClick Añadir");
+				lanzarActivityAnadir();	
+			}
+		});
+		Log.d("ENRICO","OnClick Eliminar");
+		botoneliminar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Log.d("ENRICO","Dentro OnClick Eliminar");
+				eliminarEquipo(view);	
+			}
+		});
     }
 	
 	/**

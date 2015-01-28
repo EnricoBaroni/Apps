@@ -57,6 +57,14 @@ public class AnadirEquipoActivity extends ListActivity {
      	
      	db = new DbAdapter(this);
      	db.open();
+
+		Log.d("ENRICO","OnClick Eliminar");
+		botonanadir.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Log.d("ENRICO","Dentro OnClick Eliminar");
+				insertarRegistro(view);	
+			}
+		});
     }
         
 	/**
