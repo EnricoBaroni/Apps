@@ -45,12 +45,11 @@
                        android:layout_height="wrap_content"
                        android:text="@string/txtNombre" 
                        android:paddingLeft="5dp"/>
-                   <!--
-                        EditText 
+                   <EditText 
 		    			android:id="@+id/etAnadirNombreJugador"
 						android:layout_width="fill_parent" 
 						android:layout_height="wrap_content"
-						android:inputType="text" /-->
+						android:inputType="text" />
 
                </LinearLayout>
 
@@ -65,12 +64,11 @@
                        android:layout_height="wrap_content"
                        android:text="@string/txtFechaNacimiento"  
                        android:paddingLeft="5dp"/>
-                   <!--
-                        EditText 
+                   <EditText 
 		    			android:id="@+id/etAnadirFechNacJugador"
 						android:layout_width="fill_parent" 
 						android:layout_height="wrap_content"
-						android:inputType="text" /-->
+						android:inputType="text" />
 
                </LinearLayout>
            </LinearLayout>
@@ -92,11 +90,11 @@
                    android:layout_height="wrap_content"
                    android:text="@string/txtPeso"  
                        android:paddingLeft="5dp"/>
-               <!-- EditText 
+               <EditText 
 		    		android:id="@+id/etAnadirPesoJugador"
 					android:layout_width="fill_parent" 
 					android:layout_height="wrap_content"
-					android:inputType="text" / -->
+					android:inputType="text" />
            </RelativeLayout>
 
            <RelativeLayout
@@ -110,11 +108,11 @@
                    android:layout_height="wrap_content"
                    android:text="@string/txtAltura"  
                        android:paddingLeft="5dp"/>
-               <!-- EditText 
+               <EditText 
 		    		android:id="@+id/etAnadirAlturaJugador"
 					android:layout_width="fill_parent" 
 					android:layout_height="wrap_content"
-					android:inputType="text" / -->
+					android:inputType="text" />
            </RelativeLayout>
        </LinearLayout>
 
@@ -129,11 +127,11 @@
                android:layout_height="wrap_content"
                android:text="@string/txtTelefono"  
                        android:paddingLeft="5dp"/>
-           <!-- EditText 
+           <EditText 
 		   		android:id="@+id/etAnadirTfnJugador"
 				android:layout_width="fill_parent" 
 				android:layout_height="wrap_content"
-				android:inputType="text" / -->
+				android:inputType="text" />
 
        </LinearLayout>
 

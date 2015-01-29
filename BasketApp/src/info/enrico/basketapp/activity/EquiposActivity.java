@@ -76,6 +76,7 @@ public class EquiposActivity extends Activity {
      	arrayequip = db.obtenerEquipos(); //CARGA TODOS LOS EQUIPOS
      	
      	AdapterEquipos adapter = new AdapterEquipos(this, arrayequip);
+     	lista.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 		lista.setAdapter(adapter);
      	
 		// Le asociamos un listener para saber cuál clickamos

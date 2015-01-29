@@ -5,15 +5,15 @@ import info.enrico.basketapp.R.id;
 import info.enrico.basketapp.R.layout;
 import info.enrico.basketapp.R.xml;
 import info.enrico.basketapp.calendar.ExtendedCalendarView;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-public class CalendarioActivity extends PreferenceActivity {
+public class CalendarioActivity extends Activity {
 	Button botonmenu;
 	
     @Override

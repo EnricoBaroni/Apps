@@ -6,6 +6,7 @@ import info.enrico.basketapp.entity.Entrenamiento;
 import info.enrico.basketapp.entity.Equipo;
 import info.enrico.basketapp.entity.Jugador;
 
+import java.sql.Blob;
 import java.util.ArrayList;
 
 import android.content.Context;

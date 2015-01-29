@@ -53,11 +53,11 @@ public class AnadirEntrenamientoActivity extends Activity {
      	//visualizar graficamente los layout, luego descomentarlos alli y aqui
      	
         // En esta caja de texto meteremos nuevos jugadores
-     	////nuevoNombre = (EditText) findViewById(R.id.etAnadirNombreJugador);
-     	////nuevoFechNac = (EditText) findViewById(R.id.etAnadirFechNacJugador);
-     	////nuevoPeso = (EditText) findViewById(R.id.etAnadirPesoJugador);
-     	////nuevoAltura = (EditText) findViewById(R.id.etAnadirAlturaJugador);
-     	////nuevoTfn = (EditText) findViewById(R.id.etAnadirTfnJugador);
+     	nuevoNombre = (EditText) findViewById(R.id.etAnadirNombreJugador);
+     	nuevoFechNac = (EditText) findViewById(R.id.etAnadirFechNacJugador);
+     	nuevoPeso = (EditText) findViewById(R.id.etAnadirPesoJugador);
+     	nuevoAltura = (EditText) findViewById(R.id.etAnadirAlturaJugador);
+     	nuevoTfn = (EditText) findViewById(R.id.etAnadirTfnJugador);
      	//TODO MAYBE ¿Igual en un futuro? Un textview que informa si el nuevo jugador no se puede insertar
         txtResultado = (TextView) findViewById(R.id.txtResultadoAnadirJugador);
      	//Botones
