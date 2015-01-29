@@ -12,7 +12,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name="info.enrico.basketapp.Activity.MenuActivity"
+            android:name="info.enrico.basketapp.activity.MenuActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,20 +22,49 @@
         </activity>                
         <activity
             android:label="@string/entrenamiento_title"
-            android:name="info.enrico.basketapp.Activity.EntrenamientosActivity" >
+            android:name="info.enrico.basketapp.activity.EntrenamientosActivity" >
         </activity>
         <activity
             android:label="@string/equipos_title"
-            android:name="info.enrico.basketapp.Activity.EquiposActivity" >
+            android:name="info.enrico.basketapp.activity.EquiposActivity" >
         </activity>
         <activity
             android:label="@string/calendario_title"
-            android:name="info.enrico.basketapp.Activity.CalendarioActivity" >
+            android:name="info.enrico.basketapp.activity.CalendarioActivity" >
         </activity>
         <activity
             android:label="@string/ayuda_title"
-            android:name="info.enrico.basketapp.Activity.AyudaActivity" >
+            android:name="info.enrico.basketapp.activity.AyudaActivity" >
         </activity>
+        <activity
+            android:label="@string/anadirEntrenamiento_title"
+            android:name="info.enrico.basketapp.activity.AnadirEntrenamientoActivity" >
+        </activity>
+        <activity
+            android:label="@string/anadirEquipo_title"
+            android:name="info.enrico.basketapp.activity.AnadirEquipoActivity" >
+        </activity>
+        <activity
+            android:label="@string/anadirJugador_title"
+            android:name="info.enrico.basketapp.activity.AnadirJugadorActivity" >
+        </activity>
+        <activity
+            android:label="@string/entrenamiento_title"
+            android:name="info.enrico.basketapp.activity.EntrenamientoActivity" >
+        </activity>
+        <activity
+            android:label="@string/equipo_title"
+            android:name="info.enrico.basketapp.activity.EquipoActivity" >
+        </activity>
+        <activity
+            android:label="@string/jugadores_ficha"
+            android:name="info.enrico.basketapp.activity.FichaJugadorActivity" >
+        </activity>
+        <activity
+            android:label="@string/jugadores_equipo"
+            android:name="info.enrico.basketapp.activity.JugadoresActivity" >
+        </activity>
+        
     </application>
 
 </manifest>
