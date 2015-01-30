@@ -44,6 +44,19 @@
            android:layout_height="wrap_content"
            android:text="@string/eliminar_button"
            android:textColor="@color/version_color" />
+       
+       <Button
+           android:id="@+id/botonChangeEquipos"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/change_button"
+           android:textColor="@color/version_bkgrd" />
+       <Button
+           android:id="@+id/botonEntrarEquipos"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/entrar_button"
+           android:textColor="@color/menu_glow" />
 
    </LinearLayout>
 

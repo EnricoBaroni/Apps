@@ -295,6 +295,72 @@ public class DbAdapter {
 	}
 	
 	/**
+	 * borrarEquipo
+	 * Borra el registro que tiene el id especificado.
+	 * Y actualiza el idEquipoJugador de los jugadores afectados
+	 * @param idEquipoBorrar id del registro a borrar
+	 * @return Devuelve el nº de registros afectados.
+	 * @return 0 = No se han borrado equipos. -1 = No se han actualizado jugadores.
+	 */
+	public int borrarEquipoN(String nombreEquipoBorrar) {
+		int numEquipos = 0; //Numero de equipos borrados, simplemente por si me interesa indicarlo
+		int idEquipoObtenido = 0; 
+		final SQLiteDatabase db = dbHelper.getReadableDatabase();
+		String deleteQuery = "";
+		String updateQuery = "";
+		String selectQuery = "";
+			  		 
+		selectQuery = "SELECT idEquipo FROM equipos WHERE nombreEquipo='" + nombreEquipoBorrar + "';";
+
+		Log.e("ENRICO", "Query select equipo realizada");
+		final Cursor a = db.rawQuery(selectQuery, null);
+		if (a != null) {
+			if (a.moveToFirst()) {
+				do {
+					idEquipoObtenido = a.getInt(a.getColumnIndex("idEquipo"));   					
+				} while (a.moveToNext());
+				a.close();
+				
+				//Una vez borrado el equipo con ese id, cambiamos los idEquipo de los jugadores a 0
+				deleteQuery = "DELETE FROM  equipos WHERE nombreEquipo='" + nombreEquipoBorrar + "';";
+
+				Log.e("ENRICO", "Query delete jugadores realizada");
+				final Cursor b = db.rawQuery(deleteQuery, null);
+				if (b != null) {
+					if (b.moveToFirst()) {
+						do {
+							numEquipos +=1;
+						} while (b.moveToNext());
+						b.close();
+					}
+				}else{
+					return -1;//No se ha actualizado ningún jugador
+				}
+				
+				//Una vez borrado el equipo con ese id, cambiamos los idEquipo de los jugadores a 0
+				updateQuery = "UPDATE jugadores SET idEquipoJugador='0' WHERE idEquipoJugador='" + idEquipoObtenido + "';";
+
+				Log.e("ENRICO", "Query update jugadores realizada");
+				final Cursor c = db.rawQuery(updateQuery, null);
+				if (c != null) {
+					if (c.moveToFirst()) {
+						do {
+							//Si en un futuro quiero informar de los jugadores afectados aumentar aqui el valor
+							//numJugadores +=1;
+						} while (c.moveToNext());
+						c.close();
+					}
+				}else{
+					return -1;//No se ha actualizado ningún jugador
+				}
+				return numEquipos;
+			}
+		}
+		a.close();
+		return 0; //No se ha eliminado ningun equipo
+	}
+	
+	/**
 	 * borrarDibujo
 	 * Borra el registro que tiene el id especificado.
 	 * 

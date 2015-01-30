@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class AdapterEquipos extends BaseAdapter{
@@ -35,6 +36,11 @@ public class AdapterEquipos extends BaseAdapter{
 	@Override
 	public Object getItem(int arg0) {
 		return items.get(arg0);
+	}
+	
+	
+	public String getEquipoNombre(int arg0) {
+		return items.get(arg0).getNombreEquipo();
 	}
 
 	@Override
@@ -62,7 +68,9 @@ public class AdapterEquipos extends BaseAdapter{
 		//Rellenamos el nombre
 		TextView nombre = (TextView) v.findViewById(R.id.jugador_nom);
 		nombre.setText(equi.getNombreEquipo());
-
+		//Rellenamos el CheckBox
+		CheckBox chk = (CheckBox) v.findViewById(R.id.chkEquipos);
+		chk.setChecked(false);
 		// Retornamos la vista
 		return v;
 	}

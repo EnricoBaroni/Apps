@@ -33,7 +33,7 @@
 
        <Button
            android:id="@+id/botonAnadirJugador"
-           android:layout_width="130dp"
+           android:layout_width="110dp"
            android:layout_height="wrap_content"
            android:onClick="roll"
            android:text="@string/anadir_button"
@@ -49,11 +49,16 @@
 
        <Button
            android:id="@+id/botonCrearJugador"
-           android:layout_width="130dp"
+           android:layout_width="110dp"
            android:layout_height="wrap_content"
            android:text="@string/crear_button"
            android:textColor="@color/background_color" />
-
+		<Button
+           android:id="@+id/botonChangeJugadores"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/change_button"
+           android:textColor="@color/version_bkgrd" />
    </LinearLayout>
 
     </LinearLayout>

@@ -34,7 +34,7 @@
 
        <Button
            android:id="@+id/botonAnadirJugadorEquipo"
-           android:layout_width="130dp"
+           android:layout_width="110dp"
            android:layout_height="wrap_content"
            android:text="@string/anadir_button"
            android:textColor="@color/background_color" />
@@ -48,11 +48,16 @@
 
        <Button
            android:id="@+id/botonEditarDetallesEquipo"
-           android:layout_width="130dp"
+           android:layout_width="110dp"
            android:layout_height="wrap_content"
            android:text="@string/editar_button"
            android:textColor="@color/background_color" />
-
+		<Button
+           android:id="@+id/botonChangeEquipo"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/change_button"
+           android:textColor="@color/version_bkgrd" />
    </LinearLayout>
 
     </LinearLayout>

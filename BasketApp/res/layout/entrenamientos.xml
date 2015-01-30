@@ -43,7 +43,7 @@
 
        <Button
            android:id="@+id/botonbuscar_entrenamientos"
-           android:layout_width="130dp"
+           android:layout_width="110dp"
            android:layout_height="wrap_content"
            android:text="@string/buscar_button"
            android:textColor="@color/background_color" />
@@ -56,11 +56,16 @@
            android:textColor="@color/version_color" />
        <Button
            android:id="@+id/botonanadir_entrenamientos"
-           android:layout_width="130dp"
+           android:layout_width="110dp"
            android:layout_height="wrap_content"
            android:text="@string/anadir_button"
            android:textColor="@color/background_color" />
-
+		<Button
+           android:id="@+id/botonChangeEntrenamientos"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:text="@string/change_button"
+           android:textColor="@color/version_bkgrd" />
    </LinearLayout>
 
     </LinearLayout>

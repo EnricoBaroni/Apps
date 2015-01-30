@@ -17,10 +17,15 @@
     <TextView 
 	    android:id="@+id/jugador_nom"
 		android:clickable="false"
-		android:layout_width="fill_parent" 
+		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content" 
 	    android:text="" 
         android:textAppearance="?android:attr/textAppearanceLarge"
 		/>
+
+    <CheckBox
+        android:id="@+id/chkEquipos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 	
 </LinearLayout>

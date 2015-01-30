@@ -20,6 +20,8 @@
     <string name="anadirEntrenamiento_title">Añadir Entrenamiento</string>
     <!-- Botones -->
     <string name="anadir_button">Añadir</string>
+    <string name="change_button">I/M</string>
+    <string name="entrar_button">GO</string>
     <string name="buscar_button">Buscar</string>
     <string name="salir_button">Salir</string>
     <string name="editar_button">Editar</string>
